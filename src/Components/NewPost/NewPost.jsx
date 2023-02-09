@@ -1,9 +1,10 @@
-import { Link, Form } from "react-router-dom";
+import { Link, Form, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import styled from "./NewPost.module.scss";
 
 const New = ({ settings }) => {
     const [dataPost, setDataPost] = useState(settings.objectPost);
+    const navigate = useNavigate();
 
     const func = () => {
         fetch(settings.urlFetch, {
@@ -24,8 +25,20 @@ const New = ({ settings }) => {
         });
     };
 
+    const submit = (event) => {
+        if (event.key == "Enter") {
+            func();
+            navigate("/Home/" + settings.urlLink);
+        }
+    };
+
     return (
-        <Form className={styled.form} action="#" method="post">
+        <Form
+            className={styled.form}
+            action="#"
+            method="post"
+            onKeyDown={submit}
+        >
             <input
                 minLength={1}
                 maxLength={40}

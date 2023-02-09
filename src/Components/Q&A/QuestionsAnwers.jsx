@@ -11,7 +11,10 @@ export default function QuestionsAnwers({
     setStateQuestions,
     setStateQuestion,
 }) {
-    const setDataQuesion = (event) => setStateQuestion(getId(event));
+    const setDataQuesion = (event) => {
+        if (event.target.classList.contains(styled.Wrapperposts)) return;
+        setStateQuestion(getId(event));
+    };
 
     return (
         <div className={styled.Wrapperposts}>
