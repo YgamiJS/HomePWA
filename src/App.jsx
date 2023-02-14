@@ -30,7 +30,7 @@ function App() {
     const route = createBrowserRouter(
         createRoutesFromElements(
             <Route
-                path="/Home-PWA-test/"
+                path="/HomePWA/"
                 element={
                     <Layout
                         posts={posts}
@@ -51,7 +51,7 @@ function App() {
                     }
                 ></Route>
                 <Route
-                    path="/Home-PWA-test/articles"
+                    path="/HomePWA/articles"
                     element={
                         <Articles
                             posts={posts}
@@ -61,7 +61,7 @@ function App() {
                     }
                 ></Route>
                 <Route
-                    path="/Home/currentArticle"
+                    path="/HomePWA/currentArticle"
                     element={
                         <CurrentArticle
                             posts={posts}
@@ -70,7 +70,7 @@ function App() {
                     }
                 ></Route>
                 <Route
-                    path="/Home-PWA-test/newArticle"
+                    path="/HomePWA/newArticle"
                     element={
                         <New
                             settings={{
@@ -93,7 +93,7 @@ function App() {
                     }
                 ></Route>
                 <Route
-                    path="/Home-PWA-test/questions-anwers"
+                    path="/HomePWA/questions-anwers"
                     element={
                         <QuestionsAnwers
                             stateQuestions={stateQuestions}
@@ -103,7 +103,7 @@ function App() {
                     }
                 ></Route>
                 <Route
-                    path="/Home/qa"
+                    path="/HomePWA/qa"
                     element={
                         <Qa
                             stateQuestion={stateQuestion}
@@ -112,7 +112,7 @@ function App() {
                     }
                 ></Route>
                 <Route
-                    path="/Home-PWA-test/newQuestion"
+                    path="/HomePWA/newQuestion"
                     element={
                         <New
                             settings={{
