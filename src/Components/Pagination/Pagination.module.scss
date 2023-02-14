@@ -1,16 +1,15 @@
-.paginationButton {
-    background: white;
-    padding: 10px 15px;
-    border-radius: 50px;
-}
-
-.paginationButton__current {
-    border: 3px solid red;
-}
+@import "../../assets/styles/varibles.scss";
 
 .pagination {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px 0;
+}
+
+.button {
+    background: $ColorWhite;
+    border: 3px solid $ColorWhite;
+    padding: 20px 40px;
+    border-radius: 24px;
 }

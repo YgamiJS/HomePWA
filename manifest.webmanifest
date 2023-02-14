@@ -1,0 +1,16 @@
+{
+    "name": "Home PWA",
+    "short_name": "Home",
+    "description": "",
+    "icons": [
+        {
+            "src": "./src/assets/images/logo.ico",
+            "sizes": "32x32",
+            "type": "image/ico"
+        }
+    ],
+    "start_url": "./index.html",
+    "display": "fullscreen",
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34"
+}

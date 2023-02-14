@@ -141,7 +141,9 @@ export default function Layout({ posts, setStateDataPost, stateQuestions }) {
                                     styled.navbar__wrapper + " " + styled.list
                                 }
                             >
-                                <Link to="/Home/">Lite</Link>
+                                <Link className={styled.logo} to="/Home/">
+                                    Lite
+                                </Link>
                                 <ul>
                                     <li>
                                         <NavigationLink

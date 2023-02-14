@@ -5,7 +5,9 @@ const NavigationLink = ({ link, text, ...props }) => {
     return (
         <NavLink
             {...props}
-            className={({ isActive }) => (isActive ? styled.active : "")}
+            className={({ isActive }) =>
+                isActive ? styled.active : styled.hover
+            }
             to={link}
         >
             {text}

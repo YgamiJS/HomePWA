@@ -1,10 +1,8 @@
-@use "../../App.scss" as App;
-
-$Black: black;
+@import "../../assets/styles/varibles.scss";
 
 .header,
 .footer {
-    background-color: App.$BgColorBlackGrey;
+    background-color: $BgColorBlackGrey;
     .header__container,
     .footer__container {
         display: flex;
@@ -14,6 +12,10 @@ $Black: black;
             .navbar__container {
                 .navbar__wrapper {
                     display: flex;
+                    .logo {
+                        font-size: 28px;
+                        align-self: flex-start;
+                    }
                     .menu {
                         display: flex;
                         flex-wrap: wrap;
@@ -22,7 +24,7 @@ $Black: black;
 
                         li {
                             a {
-                                align-self: center;
+                                align-self: flex-end;
                             }
                         }
 
@@ -56,7 +58,7 @@ $Black: black;
     flex-direction: column-reverse;
 }
 .open {
-    background: App.$BgColorBlackGrey;
+    background: $BgColorBlackGrey;
     position: fixed;
     left: 0%;
     width: 100%;
@@ -88,7 +90,7 @@ $Black: black;
 }
 
 .menuBtn {
-    background-color: App.$BgColorGrey;
+    background-color: $BgColorGrey;
     margin: 0 5px;
     width: 25px;
     height: 25px;

@@ -1,8 +1,5 @@
 @import "scss-reset/_reset.scss";
-
-$BgColorBlackGrey: #1e232a;
-$BgColorGrey: #21262d;
-$ColorWhite: white;
+@import "./assets/styles/varibles.scss";
 
 #root {
     display: flex;
@@ -11,7 +8,9 @@ $ColorWhite: white;
 }
 
 a {
+    cursor: pointer;
     text-decoration: none;
+    color: $ColorWhite;
 }
 
 @font-face {

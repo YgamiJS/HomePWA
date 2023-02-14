@@ -29,7 +29,11 @@ export default function Pagination({ posts, setPosts, settings }) {
 
     return (
         <div className={styled.pagination}>
-            {totalPages !== page && <button onClick={changePage}>text</button>}
+            {totalPages !== page && (
+                <button className={styled.button} onClick={changePage}>
+                    Next
+                </button>
+            )}
         </div>
     );
 }
