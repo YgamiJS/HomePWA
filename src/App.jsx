@@ -30,7 +30,7 @@ function App() {
     const route = createBrowserRouter(
         createRoutesFromElements(
             <Route
-                path="/Home/"
+                path="/Home-PWA-test/"
                 element={
                     <Layout
                         posts={posts}
@@ -51,7 +51,7 @@ function App() {
                     }
                 ></Route>
                 <Route
-                    path="/Home/articles"
+                    path="/Home-PWA-test/articles"
                     element={
                         <Articles
                             posts={posts}
@@ -70,7 +70,7 @@ function App() {
                     }
                 ></Route>
                 <Route
-                    path="/Home/newArticle"
+                    path="/Home-PWA-test/newArticle"
                     element={
                         <New
                             settings={{
@@ -93,7 +93,7 @@ function App() {
                     }
                 ></Route>
                 <Route
-                    path="/Home/questions-anwers"
+                    path="/Home-PWA-test/questions-anwers"
                     element={
                         <QuestionsAnwers
                             stateQuestions={stateQuestions}
@@ -112,7 +112,7 @@ function App() {
                     }
                 ></Route>
                 <Route
-                    path="/Home/newQuestion"
+                    path="/Home-PWA-test/newQuestion"
                     element={
                         <New
                             settings={{
